@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin-top: 20px;
+}
