@@ -28,8 +28,8 @@ const CarModal = ({ isOpen, onRequestClose, carId }: CarModalProps) => {
   useEffect(() => {
     if (isOpen) {
       if (carId) {
-        const studentData = cars.find((student) => student.id === carId);
-        if (studentData) setCar(studentData);
+        const carData = cars.find((student) => student.id === carId);
+        if (carData) setCar(carData);
       } else {
         setCar({
           model: "",
@@ -69,7 +69,7 @@ const CarModal = ({ isOpen, onRequestClose, carId }: CarModalProps) => {
     >
       <div className="bg-white p-6 rounded-lg max-w-lg w-full h-[80%] flex flex-col">
         <h1 className="text-2xl font-bold mb-4">
-          {carId ? "Edit" : "Add"} Student
+          {carId ? "Edit" : "Add"} Car
         </h1>
         <div className="flex-1 overflow-y-auto mb-4">
           <form onSubmit={handleSubmit}>
